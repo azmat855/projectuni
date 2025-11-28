@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Total & CGPA Calculator</title>
+    <title>azmat </title>
   
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,23 +20,23 @@
         </tr>
         <tr>
           <td><label for="azmat1">IT infrastructure</label></td>
-          <td><input type="number" id="azmat1"   value="0"  ></td>
+          <td><input type="number" id="azmat1"   value="0"  min="0" max="100" ></td>
         </tr>
         <tr>
           <td><label for="azmat2">web technology</label></td>
-          <td><input type="number" id="azmat2"   value="0"  ></td>
+          <td><input type="number" id="azmat2" value="0" min="0" max="100" ></td>
         </tr>
         <tr>
           <td><label for="azmat3">Artificial Intelligence</label></td>
-          <td><input type="number" id="azmat3"   value="0"  ></td>
+          <td><input type="number" id="azmat3"  value="0"  min="0" max="100"></td>
         </tr>
         <tr>
           <td><label for="azmat4">M.A.D</label></td>
-          <td><input type="number" id="azmat4"   value="0"  ></td>
+          <td><input type="number" id="azmat4"  value="0"  min="0" max="100"  ></td>
         </tr>
         <tr>
           <td><label for="azmat5">Technical Writing</label></td>
-          <td><input type="number" id="azmat5"   value="0"  ></td>
+          <td><input type="number" id="azmat5"  value="0"  min="0" max="100"></td>
         </tr>
       </tbody>
     </table>
@@ -55,15 +55,25 @@
       </div>
 
 <script>
-    function calculate() {
+    function calculate() { 
         var azmat1 = Number(document.getElementById('azmat1').value) || 0;
         var azmat2 = Number(document.getElementById('azmat2').value) || 0;
         var azmat3 = Number(document.getElementById('azmat3').value) || 0;
         var azmat4 = Number(document.getElementById('azmat4').value) || 0;
         var azmat7= Number(document.getElementById('azmat5').value) || 0;
+        
+        if (
+            azmat1 > 100 || azmat2 > 100 || azmat3 > 100 ||
+            azmat4 > 100 || azmat5 > 100
+        ) {
+            alert("Marks 100 se zyada nahi ho sakte!");
+            return;
+        }
+
+
         var total = azmat1 + azmat2 +azmat3  +  azmat4+ azmat7;
         var percent = total / 5;
-        var cgpa = percent / 25;
+        var cgpa = percent / 100 *4;
 
         document.getElementById("total").innerText = total;
         document.getElementById("percent").innerText = Math.round(percent) + "%";
