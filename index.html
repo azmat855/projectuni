@@ -56,18 +56,18 @@
 
 <script>
     function calculate() { 
-        var afridi1 = document.getElementById('azmat1').value || 0;
-        var afridi2 = document.getElementById('azmat2').value || 0;
-        var afridi3 = document.getElementById('azmat3').value || 0;
-        var afridi4 = document.getElementById('azmat4').value || 0;
-        var afridi7= document.getElementById('azmat5').value || 0;
+        var afridi1 = Number( document.getElementById('azmat1').value )|| 0;
+        var afridi2 = Number( document.getElementById('azmat2').value )|| 0;
+        var afridi3 =Number (document.getElementById('azmat3').value )|| 0;
+        var afridi4 =Number (document.getElementById('azmat4').value )|| 0;
+        var afridi5= Number(document.getElementById('azmat5').value )|| 0;
         
         if (
             afridi1 <= 100 && afridi2 <= 100 && afridi3 <=100 &&
-            afridi4 <= 100 && afridi7 <= 100
+            afridi4 <= 100 && afridi5 <= 100
     ){
 
-             var total = afridi1 + afridi2 +afridi3  +  afridi4+ afridi7;
+             var total = afridi1 + afridi2 +afridi3  +  afridi4+ afridi5;
         var percent = total / 5;
         var cgpa = percent / 100 *4;
 
