@@ -71,14 +71,11 @@ button{
   background-color:blue ;
   color:#fff;
   cursor:pointer;
-  position: absolute;
-  transform: translateX(259px);
+  
 }
 
 .azmatafridi{
-  text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
+  font-size: 17px;
    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -89,9 +86,9 @@ button{
 @media screen and (max-width: 768px) {
   button {
     position: absolute;
-    transform: translateX(183px);
+    transform: translateX(170px);
   }
   h1{
-    font-size: 20px;
+    font-size: 21px;
   }
 }

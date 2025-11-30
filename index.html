@@ -20,23 +20,23 @@
         </tr>
         <tr>
           <td><label for="azmat1">IT infrastructure</label></td>
-          <td><input type="number" id="azmat1"   value="0"  min="0" max="100" ></td>
+          <td><input type="number" id="azmat1"   value="0"   ></td>
         </tr>
         <tr>
           <td><label for="azmat2">web technology</label></td>
-          <td><input type="number" id="azmat2" value="0" min="0" max="100" ></td>
+          <td><input type="number" id="azmat2" value="0" ></td>
         </tr>
         <tr>
           <td><label for="azmat3">Artificial Intelligence</label></td>
-          <td><input type="number" id="azmat3"  value="0"  min="0" max="100"></td>
+          <td><input type="number" id="azmat3"  value="0" ></td>
         </tr>
         <tr>
           <td><label for="azmat4">M.A.D</label></td>
-          <td><input type="number" id="azmat4"  value="0"  min="0" max="100"  ></td>
+          <td><input type="number" id="azmat4"  value="0"   ></td>
         </tr>
         <tr>
           <td><label for="azmat5">Technical Writing</label></td>
-          <td><input type="number" id="azmat5"  value="0"  min="0" max="100"></td>
+          <td><input type="number" id="azmat5"  value="0"  ></td>
         </tr>
       </tbody>
     </table>
@@ -56,11 +56,11 @@
 
 <script>
     function calculate() { 
-        var afridi1 = Number(document.getElementById('azmat1').value) || 0;
-        var afridi2 = Number(document.getElementById('azmat2').value) || 0;
-        var afridi3 = Number(document.getElementById('azmat3').value) || 0;
-        var afridi4 = Number(document.getElementById('azmat4').value) || 0;
-        var afridi7= Number(document.getElementById('azmat5').value) || 0;
+        var afridi1 = document.getElementById('azmat1').value || 0;
+        var afridi2 = document.getElementById('azmat2').value || 0;
+        var afridi3 = document.getElementById('azmat3').value || 0;
+        var afridi4 = document.getElementById('azmat4').value || 0;
+        var afridi7= document.getElementById('azmat5').value || 0;
         
         if (
             afridi1 <= 100 && afridi2 <= 100 && afridi3 <=100 &&
