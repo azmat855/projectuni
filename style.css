@@ -38,7 +38,7 @@ body{
   padding:18px;
   border-radius:35px;
   box-shadow: 0 6px 18px rgba(14, 11, 11, 0.06);
-  height: 594px;
+  height: 623px;
 }
 
 
@@ -83,7 +83,7 @@ button{
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:468px) {
   button {
     position: absolute;
     transform: translateX(170px);
