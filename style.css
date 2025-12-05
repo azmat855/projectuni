@@ -4,27 +4,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-h3{
-  background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-h1{
-    text-align: center;
-    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-        padding: 27px
-}
-
-
 
 
 body{
       background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
-  padding:24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,11 +20,17 @@ body{
   background-color: #ffffff;;
   padding:18px;
   border-radius:35px;
-  box-shadow: 0 6px 18px rgba(14, 11, 11, 0.06);
   height: 623px;
 }
 
-
+h1{
+    text-align: center;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        padding: 27px
+}
 
 table{
   width:100%;
@@ -74,6 +63,16 @@ button{
   
 }
 
+.results{
+  background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   padding-top: 10px;
+}
+
+
+
 .azmatafridi{
   font-size: 17px;
    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
@@ -83,12 +82,15 @@ button{
 
 }
 
-@media screen and (max-width:468px) {
-  button {
-    position: absolute;
-    transform: translateX(170px);
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
   }
-  h1{
-    font-size: 21px;
+  button{
+      width: 80vw;
+      display: block;
+      margin:  14px  10px;
+      font-size: 20px;
   }
 }
+
