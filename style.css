@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#total{
+  color: rgb(10, 8, 8);
+
+}
 
 body{
       background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
@@ -64,24 +68,21 @@ button{
 }
 
 .results{
-  background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: #522fd4;
    padding-top: 10px;
 }
 
-
-
-.azmatafridi{
-  font-size: 17px;
-   background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+#total{
+  color: rgb(10, 8, 8);
 }
 
+#percent{
+ color: rgb(10, 8, 8);
+}
+
+#cgpa{
+  color: rgb(10, 8, 8);
+}
 @media (max-width: 480px) {
   h1 {
     font-size: 20px;
